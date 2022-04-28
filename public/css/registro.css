@@ -1,3 +1,7 @@
+html {
+    overflow: hidden;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -72,7 +76,7 @@ input {
 }
 
 .contenedor-img {
-    background-image: url('/public/images/restaurant.jpg');
+    background-image: url('/images/restaurant.jpg');
     background-size: cover;
     background-position-y: 80%;
     width: 75%;

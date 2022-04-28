@@ -19,7 +19,7 @@ app.set('view engine', 'html');
 
 app.use(express.static(publicDirectoryPath))
 
-app.get('', (req, res)=> {
+app.get('/', (req, res)=> {
     res.render('landing', {
         title: 'Landing',
         name: 'Marvin Rojas'

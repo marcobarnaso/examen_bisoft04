@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/registro.css">
+    <link rel="stylesheet" href="/public/css/top-navigation.css">
+    <title>Registro de Platillos</title>
+</head>
+
+<body>
+    <section id="navigation">
+        <nav id="main-navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/public/registro.html">Registro</a></li>
+                <li><a href="/public/menu.html">Lista</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="sct-registro-platillos">
+        <form>
+            <h1>Registro de Platillos</h1>
+            <div class="cont-control">
+                <label for="txt-correo">Nombre del Platillo</label>
+                <input name="txt-correo" type="email" placeholder="Inicie aquí" id="txt-correo">
+            </div>
+            <div class="cont-control">
+                <label for="txt-nombre">Ingredientes</label>
+                <textarea name="txt-nombre" id="txt-nombre" cols="30" rows="10" placeholder="Ingredientes"></textarea>
+            </div>
+            <div class="cont-control">
+                <label for="txt-nacimiento">Precio</label>
+                <input name="txt-nacimiento" type="number" id="txt-nacimiento">
+            </div>
+            <div>
+                <button type="button" id="btn-registrar" class="btn-oscuro" disabled>Registrar</button>
+            </div>
+            <div><span>Por favor complete todos los campos para registrar el platillo.</span></div>
+        </form>
+        <div class="contenedor-img">
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/public/js/registro.js"></script>
+    <script src="/public/js/servicio-general.js"></script>
+</body>
+
+</html>

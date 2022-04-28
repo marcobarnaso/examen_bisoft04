@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sct-registro-platillos {
+    display: flex;
+}
+
+#sct-registro-platillos form {
+    padding: 5%;
+    width: 50%;
+}
+
+#sct-registro-platillos form h1 {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#sct-registro-platillos form .cont-control {
+    margin-bottom: 25px;
+    display: block;
+    align-items: center;
+}
+
+#sct-registro-platillos form label {
+    display: block;
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+.cont-control input {
+    width: 220px;
+    height: 35px;
+    color: #B33771;
+}
+
+.btn-oscuro {
+    background: #310e04;
+    color: #fff;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: 300ms;
+    /* border: 2px solid #6D214F; */
+}
+
+.btn-oscuro:hover {
+    background: #507710;
+    border: 2px solid #507710;
+    cursor: pointer;
+}
+
+.btn-oscuro:disabled {
+    border: 1px solid #D65A40;
+    background: white;
+    color: grey;
+	-moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	-webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+	box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
+
+.contenedor-img {
+    background-image: url('/public/images/restaurant.jpg');
+    background-size: cover;
+    background-position-y: 80%;
+    width: 75%;
+    border-left: 2px solid #2C3A47;
+}
+
+span {
+    padding: 2%;
+    display: block;
+    margin-top: 10%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.input-error {
+    border: 2px solid #c44569;
+}

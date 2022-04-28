@@ -37,7 +37,6 @@ body {
 .cont-control input {
     width: 220px;
     height: 35px;
-    color: #B33771;
 }
 
 .btn-oscuro {
@@ -84,6 +83,14 @@ span {
     padding: 2%;
     display: block;
     margin-top: 10%;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+p {
+    padding: 2%;
+    display: block;
+    margin-top: 5%;
     border: 1px solid red;
     border-radius: 5px;
 }

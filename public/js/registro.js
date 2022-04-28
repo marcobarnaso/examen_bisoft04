@@ -11,6 +11,7 @@ let inputValidator = {
 
 const formularioRegistro = document.querySelectorAll("form");
 const message = document.querySelector("span");
+const message2 = document.querySelector("p")
 
 formularioRegistro.forEach((e) => {
   e.addEventListener("input", () => {
@@ -23,12 +24,14 @@ formularioRegistro.forEach((e) => {
     let allTrue = Object.keys(inputValidator).every((item) => {
       return inputValidator[item] === true;
     });
-    if (allTrue) {
+    if (allTrue && precio.value > 0) {
       btnRegistro.disabled = false;
       message.style.visibility = "hidden";
+      message2.style.visibility = "hidden";
     } else {
       btnRegistro.disabled = true;
       message.style.visibility = "visible";
+      message2.style.visibility = "visible";
     }
   });
 });

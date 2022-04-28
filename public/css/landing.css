@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image:url("/public/images/gusteaus.jpeg")
+}
+
+#landing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight:500;
+}
+
+#enter {
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    color: purple;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px white;
+    border-radius: 5px;
+    transition: 300ms;
+    margin-top: 30px;
+}
+
+#enter:hover{
+    background-color: purple;
+    border: 1px purple;
+    color: white;
+}
+

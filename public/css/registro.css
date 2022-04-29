@@ -83,7 +83,7 @@ input {
     border-left: 2px solid #2C3A47;
 }
 
-span {
+#mensaje {
     padding: 2%;
     display: block;
     margin-top: 10%;
@@ -91,13 +91,6 @@ span {
     border-radius: 5px;
 }
 
-p {
-    padding: 2%;
-    display: block;
-    margin-top: 5%;
-    border: 1px solid red;
-    border-radius: 5px;
-}
 
 .input-error {
     border: 2px solid #c44569;

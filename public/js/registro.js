@@ -43,7 +43,6 @@ function getData() {
     precio: precio.value,
   };
   registrarDatos("platillo", data);
-  document.querySelector("form").reset();
 }
 
 btnRegistro.addEventListener("click", getData);

@@ -12,6 +12,8 @@ const registrarDatos = async(endpoint, data) => {
             'title': 'Nuevo Platillo Registrado',
             'text': response.data.nombre
         })
+    }).then(e=>{
+        window.setTimeout(function(){location.reload()},3000)
     }).catch(error => {
         Swal.fire({
             'icon': 'error',

@@ -22,7 +22,7 @@
         </nav>
     </section>
     <section id="sct-registro-platillos">
-        <form>
+        <form id="registro-de-platillos">
             <h1>Registro de Platillos</h1>
             <div class="cont-control">
                 <label for="txt-correo">Nombre del Platillo</label>
@@ -37,11 +37,11 @@
                 <input name="txt-nacimiento" type="number" id="txt-nacimiento">
             </div>
             <div>
-                <button type="button" id="btn-registrar" class="btn-oscuro" disabled>Registrar</button>
+                <button type="submit" id="btn-registrar" class="btn-oscuro" disabled>Registrar</button>
             </div>
             <div>
-                <span>Por favor complete todos los campos para registrar el platillo.</span>
-                <p>El precio del platillo no puede ser menor a 1.</p>
+                <span id="mensaje">Por favor complete todos los campos para registrar el platillo.</span>
+                <p id="mensaje">El precio del platillo no puede ser menor a 1.</p>
             </div>
         </form>
         <div class="contenedor-img">

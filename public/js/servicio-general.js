@@ -1,5 +1,5 @@
 const registrarDatos = async(endpoint, data) => {
-    let url = `http://localhost:3000/${endpoint}`;
+    let url = `/${endpoint}`;
 
     await axios({
         'url': url,
@@ -22,7 +22,7 @@ const registrarDatos = async(endpoint, data) => {
 };
 
 const obtenerDatos = async(endpoint) => {
-    let url = `http://localhost:3000/${endpoint}`;
+    let url = `/${endpoint}`;
     let listaDatos;
     await axios({
             'url': url,
@@ -42,7 +42,7 @@ const obtenerDatos = async(endpoint) => {
 };
 
 const eliminarDatos = async(endpoint, _id) => {
-    let url = `http://localhost:3000/${endpoint}`;
+    let url = `/${endpoint}`;
     await axios({
         'url': url,
         'method': 'delete',

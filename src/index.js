@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 app.use(platilloRouter)
 
-const port = 3000
+const port = process.env.PORT
 
 const publicDirectoryPath = path.join(__dirname, '../public')
 
